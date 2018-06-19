@@ -1,0 +1,29 @@
+.hero {
+  height: 400px;
+  
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .welcome {
+    text-align: center;
+    
+    .title {
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .description {
+      color: #eee;
+      font-size: 1.4rem;
+    }
+
+    .button-outline {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}

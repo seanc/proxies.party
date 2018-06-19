@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
-  {{ style('style') }}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proxies.party - Cheap Proxies</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+  {{ css('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css') }}
+  {{ css('https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css') }}
+  {{ css('app') }}
 </head>
 <body>
-  <section>
-    <div class="logo"></div>
-    <div class="title"></div>
-    <div class="subtitle"><p>AdonisJs simplicity will make you feel confident about your code</p></div>
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        proxies.party
+      </div>
+
+      <div class="navbar-toggle">
+        <span class="toggle-iconbar"></span>
+        <span class="toggle-iconbar"></span>
+        <span class="toggle-iconbar"></span>
+      </div>
+
+      <ul class="navbar-menu">
+        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="welcome">
+            <h3 class="title">Welcome to <span class="color-text-flow">Proxies.party</span>!</h3>
+            <p class="description">
+              We collect and check proxies making them available to you at a cheap price.
+              By developing an aggregate platform with intuitive tools to get you the fastest
+              proxies. 
+            </p>
+          
+            <a href="#" class="button button-outline">Get Started</a>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">Features</div>
+    </div>
   </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    (function ($) {
+      $(function() {
+        $('.welcome .color-text-flow').html(function(i, html) {
+          var chars = $.trim(html).split('');
+
+          return '<span>' + chars.join('</span><span>') + '</span>';
+        });
+      })
+    })(jQuery)
+  </script>
 </body>
 </html>

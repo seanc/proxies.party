@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  align-items: center;
+
+  .section-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    position: relative;
+
+    &:before, &:after {
+      position: absolute;
+      top: 11.5px;      
+      background-color: #fff;
+      opacity: 0.6;
+      height: 1.5px;
+      width: 30%;
+      display: block;
+      content: '';
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+}
